@@ -72,5 +72,40 @@ elif tiene_dinero:
 else:
     print("Quedate en casa")
 
+#Tipos de datos evaluados como Booleanos
+print("\n Tipos de datos evaluados como Booleanos")
+#aqui entra el cast es decir la conversion de datos dentro del if
+numero = 5
+#aqui sabemos que si se evalua como una condicion booleana cuando existe un valor es true
+#no hace falta desglosar mas comparacion simplemente una comparacion booleana
+if numero: #True
+    print("El numero no es cero")
+
+numero = 0
+#En este caso que es cero se evalua como false y entonces nunca entra en la condicion en la parte del if
+if numero: #False
+    print("Aqui no entrar nunca")
+
+#Tambien aplica con las cadenas de texto
+#Se evalua de forma logica si la cadena esta vacia
+nombre = "Jesus"
+if nombre: #True
+    print("El nombre no esta vacio")
+nombre = ""
+if nombre: #False
+    print("El nombre esta vacio y nunca entra aqui porque se evalua sobre True")
+#Diferncia de comparacion y asignacion importante no olvidar
+print("\n Condicion vs Asignacion")
+edad = 20
+numero = 3 #asignacion
+es_el_tres = numero == 3 #comparacion
+if es_el_tres:
+    print("El numero es 3")
+
+print("\n La Condicion Ternaria")
+#una forma concisa de un if else en una linea de codigo
+edad = 15
+#[codigo si cumple la condicion] if [condicion] else [codigo sino cumple]
+print("Es mayor de edad")  if edad >= 18 else print("Es menor de edad")
 
 
